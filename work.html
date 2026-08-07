@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selected work by Hatim — Valley Order backend, React frontends, WordPress platforms, and e-commerce.">
+  <title>Work | Hatim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Sora:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="work">
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <a class="logo" href="index.html"><span>Hatim</span></a>
+    <nav class="nav" id="nav">
+      <a href="index.html" data-nav="home" data-i18n="nav.home">Home</a>
+      <a href="work.html" data-nav="work" data-i18n="nav.work">Work</a>
+      <a href="experience.html" data-nav="experience" data-i18n="nav.experience">Experience</a>
+      <a href="skills.html" data-nav="skills" data-i18n="nav.skills">Skills</a>
+      <a href="contact.html" data-nav="contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle" type="button" data-i18n-aria="nav.langAria">عربي</button>
+      <a class="header-cta" href="resume.html" data-i18n="nav.cv">CV</a>
+      <button class="nav-toggle" id="navToggle" data-i18n-aria="nav.menu" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="container">
+      <header class="page-hero">
+        <p class="eyebrow reveal-blur" data-i18n="work.eyebrow">Selected work</p>
+        <h1 class="split-text" data-split="section" data-i18n="work.title">Projects shipped recently</h1>
+        <p class="reveal-blur" data-i18n="work.lead">Production backends, React frontends, WordPress sites, and marketplace platforms — live and in the wild.</p>
+      </header>
+
+      <div class="work-filters reveal-blur" role="tablist" data-i18n-aria="work.filterAria" aria-label="Filter projects">
+        <button type="button" class="active" data-filter="all" role="tab" aria-selected="true" data-i18n="work.filterAll">All</button>
+        <button type="button" data-filter="django" role="tab" aria-selected="false" data-i18n="work.filterDjango">Django &amp; Backend</button>
+        <button type="button" data-filter="wordpress" role="tab" aria-selected="false" data-i18n="work.filterWp">WordPress &amp; Sites</button>
+        <button type="button" data-filter="react" role="tab" aria-selected="false" data-i18n="work.filterReact">React &amp; Frontend</button>
+      </div>
+
+      <div class="work-list">
+        <!-- 01 Valley Order -->
+        <article class="work-item spotlight-card tilt-card reveal-blur" data-category="django">
+          <div class="spotlight" aria-hidden="true"></div>
+          <div class="tilt-glow" aria-hidden="true"></div>
+          <a class="work-main-link" href="https://valley-order.com/" target="_blank" rel="noopener" aria-label="Open Valley Order">
+            <div class="work-index">01</div>
+            <div class="work-body">
+              <div class="work-tags">
+                <span data-i18n="tag.live">Live</span>
+                <span>Django REST</span>
+                <span>NestJS</span>
+                <span>Realtime</span>
+              </div>
+              <h3 data-i18n="work.valleyTitle">Valley Order</h3>
+              <p data-i18n="work.valleyDesc">Production multi-role delivery marketplace API (Customer / Provider / Captain / Admin) with OTP auth, dynamic pricing, FCM, and hybrid live GPS tracking — Django REST + NestJS Socket.io sidecar.</p>
+            </div>
+            <div class="work-preview valley">
+              <div class="preview-glow"></div>
+              <span data-i18n="work.openLive">Open live →</span>
+            </div>
+          </a>
+          <div class="work-actions work-actions-grid cols-3">
+            <a class="work-action live" href="https://valley-order.com/" target="_blank" rel="noopener">
+              <strong data-i18n="work.viewLanding">View landing</strong>
+              <span>valley-order.com</span>
+            </a>
+            <a class="work-action live" href="https://valley-order.com/" target="_blank" rel="noopener">
+              <strong data-i18n="work.valleyHighlight">Backend focus</strong>
+              <span data-i18n="work.valleyHighlightSub">API · Tracking · Ops</span>
+            </a>
+            <a class="work-action code" href="contact.html">
+              <strong data-i18n="work.caseStudy">Case details</strong>
+              <span data-i18n="work.caseStudySub">Architecture &amp; impact</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 02 Boma -->
+        <article class="work-item spotlight-card tilt-card reveal-blur" data-category="wordpress">
+          <div class="spotlight" aria-hidden="true"></div>
+          <div class="tilt-glow" aria-hidden="true"></div>
+          <a class="work-main-link" href="https://boma.sy/" target="_blank" rel="noopener" aria-label="Open Boma Platform">
+            <div class="work-index">02</div>
+            <div class="work-body">
+              <div class="work-tags"><span data-i18n="tag.live">Live</span><span>WordPress</span><span>WooCommerce</span><span>Flutter</span></div>
+              <h3>Boma Platform</h3>
+              <p data-i18n="work.bomaDesc">Live WooCommerce store for BOMA electrical appliances in Syria — kitchen gadgets, smart home devices, and personal care — with product catalog, cart checkout, delivery/warranty messaging, and Flutter mobile app integration.</p>
+            </div>
+            <div class="work-preview">
+              <div class="preview-glow"></div>
+              <span data-i18n="work.openLive">Open live →</span>
+            </div>
+          </a>
+          <div class="work-actions work-actions-grid cols-1">
+            <a class="work-action live" href="https://boma.sy/" target="_blank" rel="noopener">
+              <strong data-i18n="work.viewLive">View live site</strong>
+              <span>boma.sy</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 03 Gia -->
+        <article class="work-item spotlight-card tilt-card reveal-blur" data-category="react">
+          <div class="spotlight" aria-hidden="true"></div>
+          <div class="tilt-glow" aria-hidden="true"></div>
+          <a class="work-main-link" href="https://www.giamaharanigroup.com/" target="_blank" rel="noopener" aria-label="Open Gia Restaurant">
+            <div class="work-index">03</div>
+            <div class="work-body">
+              <div class="work-tags"><span data-i18n="tag.live">Live</span><span>React</span><span>Frontend</span></div>
+              <h3 data-i18n="work.giaTitle">Gia — Shawarma &amp; Ayam Goreng</h3>
+              <p data-i18n="work.giaDesc">Restaurant web platform in Bogor, Indonesia — digital menu, promos, bilingual UI, and WhatsApp ordering flows built with React on the frontend.</p>
+            </div>
+            <div class="work-preview gia">
+              <div class="preview-glow"></div>
+              <span data-i18n="work.openLive">Open live →</span>
+            </div>
+          </a>
+          <div class="work-actions work-actions-grid cols-1">
+            <a class="work-action live" href="https://www.giamaharanigroup.com/" target="_blank" rel="noopener">
+              <strong data-i18n="work.viewLive">View live site</strong>
+              <span>giamaharanigroup.com</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- 04 Digital Arabic + Ademixvet -->
+        <article class="work-item spotlight-card tilt-card reveal-blur" data-category="wordpress">
+          <div class="spotlight" aria-hidden="true"></div>
+          <div class="tilt-glow" aria-hidden="true"></div>
+          <div class="work-main-link">
+            <div class="work-index">04</div>
+            <div class="work-body">
+              <div class="work-tags"><span data-i18n="tag.live">Live</span><span>WordPress</span><span data-i18n="tag.portfolio">Sites</span></div>
+              <h3 data-i18n="work.digitalTitle">Digital Arabic &amp; Ademixvet</h3>
+              <p data-i18n="work.digitalDesc">WordPress delivery for real-estate, association, and commerce platforms — custom builds, migrations, performance, and maintenance (including Ademixvet).</p>
+            </div>
+            <div class="work-preview commerce">
+              <div class="preview-glow"></div>
+              <span data-i18n="work.digitalPreview">Sites shipped</span>
+            </div>
+          </div>
+          <div class="site-chips" aria-label="Digital Arabic and Ademixvet sites">
+            <a class="site-chip" href="https://kochreal.com" target="_blank" rel="noopener">
+              <span class="dot" aria-hidden="true"></span>
+              Koch Real
+            </a>
+            <a class="site-chip" href="https://asamena.org" target="_blank" rel="noopener">
+              <span class="dot" aria-hidden="true"></span>
+              ASAMENA
+            </a>
+            <span class="site-chip is-offline" title="Currently offline">
+              <span class="dot" aria-hidden="true"></span>
+              Ademixvet
+              <span class="chip-note" data-i18n="tag.offline">Offline</span>
+            </span>
+            <span class="site-chip is-offline" title="Currently offline">
+              <span class="dot" aria-hidden="true"></span>
+              Ranim Real Estate
+              <span class="chip-note" data-i18n="tag.offline">Offline</span>
+            </span>
+          </div>
+        </article>
+
+        <!-- 05 Adam Events -->
+        <article class="work-item spotlight-card tilt-card reveal-blur" data-category="wordpress">
+          <div class="spotlight" aria-hidden="true"></div>
+          <div class="tilt-glow" aria-hidden="true"></div>
+          <a class="work-main-link" href="https://adamevents.net/" target="_blank" rel="noopener" aria-label="Open Adam Events">
+            <div class="work-index">05</div>
+            <div class="work-body">
+              <div class="work-tags"><span data-i18n="tag.live">Live</span><span>WordPress</span><span>Elementor Pro</span></div>
+              <h3 data-i18n="work.adamTitle">Adam Events</h3>
+              <p data-i18n="work.adamDesc">WordPress events platform for conferences, exhibitions, and media coverage — conversion-focused layouts, booking workflows, and dynamic content.</p>
+            </div>
+            <div class="work-preview events">
+              <div class="preview-glow"></div>
+              <span data-i18n="work.openLive">Open live →</span>
+            </div>
+          </a>
+          <div class="work-actions work-actions-grid cols-1">
+            <a class="work-action live" href="https://adamevents.net/" target="_blank" rel="noopener">
+              <strong data-i18n="work.viewLive">View live site</strong>
+              <span>adamevents.net</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Hatim</span>
+      <a href="resume.html" data-i18n="footer.resume">Resume (PDF)</a>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

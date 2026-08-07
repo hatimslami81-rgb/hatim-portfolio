@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hatim — Information Engineer & Full-Stack Web Developer specializing in Python, Django REST Framework, WordPress & WooCommerce.">
+  <title>Hatim | Python (Django) & Full-Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Sora:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <a class="logo" href="index.html"><span>Hatim</span></a>
+    <nav class="nav" id="nav">
+      <a href="index.html" data-nav="home" data-i18n="nav.home">Home</a>
+      <a href="work.html" data-nav="work" data-i18n="nav.work">Work</a>
+      <a href="experience.html" data-nav="experience" data-i18n="nav.experience">Experience</a>
+      <a href="skills.html" data-nav="skills" data-i18n="nav.skills">Skills</a>
+      <a href="contact.html" data-nav="contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle" type="button" data-i18n-aria="nav.langAria">عربي</button>
+      <a class="header-cta" href="resume.html" data-i18n="nav.cv">CV</a>
+      <button class="nav-toggle" id="navToggle" data-i18n-aria="nav.menu" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-mesh"></div>
+        <div class="aurora" id="aurora">
+          <div class="aurora-blob aurora-blob-1"></div>
+          <div class="aurora-blob aurora-blob-2"></div>
+          <div class="aurora-blob aurora-blob-3"></div>
+          <div class="aurora-blob aurora-blob-4"></div>
+          <div class="aurora-plasma"></div>
+        </div>
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+        <div class="hero-lines"></div>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-brand split-text single" data-split="brand">
+          <span class="word">Hatim</span>
+        </p>
+        <h1 class="split-text" data-split="headline" data-i18n="home.headline">Building marketplace backends, React UIs, and high-converting web platforms.</h1>
+        <p class="hero-lead reveal-blur" data-delay="1" data-i18n="home.lead">
+          Information Engineer &amp; Full-Stack Web Developer specializing in Python &amp; Django REST, React frontends, and production WordPress &amp; WooCommerce platforms.
+        </p>
+        <div class="hero-actions reveal-blur" data-delay="2">
+          <a class="btn btn-primary magnetic" href="contact.html" data-i18n="home.ctaTouch"><span>Get in touch</span></a>
+          <a class="btn btn-ghost magnetic" href="resume.html" data-i18n="home.ctaCv"><span>View resume</span></a>
+        </div>
+        <div class="hero-stats reveal-blur" data-delay="3">
+          <div><strong data-count="5">0</strong><span data-i18n="home.statProjects">Projects</span></div>
+          <div><strong data-count="5">0</strong><span data-i18n="home.statRoles">Roles</span></div>
+          <div><strong data-count="3">0</strong><span data-i18n="home.statStacks">Stacks</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-scale" aria-hidden="true">
+        <div class="stack-card stack-card-1">
+          <span class="stack-label" data-i18n="home.stackBackend">Backend</span>
+          <strong>Django REST</strong>
+        </div>
+        <div class="stack-card stack-card-2">
+          <span class="stack-label" data-i18n="home.stackFrontend">Frontend</span>
+          <strong>React</strong>
+        </div>
+        <div class="code-panel">
+          <div class="code-top">
+            <span></span><span></span><span></span>
+            <em>api/views.py</em>
+          </div>
+          <pre><code><span class="kw">class</span> <span class="type">SecureViewSet</span>(<span class="type">ModelViewSet</span>):
+  permission_classes = [IsAuthenticated]
+  authentication_classes = [JWTAuthentication]
+
+  <span class="kw">def</span> <span class="fn">get_queryset</span>(self):
+    <span class="kw">return</span> self.queryset.select_related(
+      <span class="type">"owner"</span>, <span class="type">"profile"</span>
+    ).prefetch_related(<span class="type">"tags"</span>)</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Python</span><span>Django</span><span>DRF</span><span>React</span><span>PostgreSQL</span><span>Channels</span><span>WordPress</span><span>WooCommerce</span><span>NestJS</span>
+        <span>Python</span><span>Django</span><span>DRF</span><span>React</span><span>PostgreSQL</span><span>Channels</span><span>WordPress</span><span>WooCommerce</span><span>NestJS</span>
+      </div>
+    </div>
+
+    <section class="section about">
+      <div class="container narrow">
+        <p class="eyebrow reveal-blur" data-i18n="home.aboutEyebrow">About</p>
+        <h2 class="split-text" data-split="section" data-i18n="home.aboutTitle">Full-stack engineer focused on APIs, React UIs, and conversion.</h2>
+        <p class="reveal-blur" data-i18n="home.aboutBody">
+          I design and ship Django REST backends with JWT auth, realtime tracking, and clean data models —
+          plus React frontends and production WordPress &amp; WooCommerce platforms tuned for speed, security, and UX.
+        </p>
+        <div class="home-preview reveal-blur">
+          <div class="home-preview-grid">
+            <article class="home-card">
+              <strong data-i18n="home.cardWork">Work</strong>
+              <span data-i18n="home.cardWorkBody">Live: Valley Order, Adam Events, Boma, Digital Arabic, Gia, and more.</span>
+              <a href="work.html" data-i18n="home.cardWorkLink">View projects →</a>
+            </article>
+            <article class="home-card">
+              <strong data-i18n="home.cardExp">Experience</strong>
+              <span data-i18n="home.cardExpBody">Marketplace backend at Valley Order (Jibran), plus WordPress &amp; React delivery.</span>
+              <a href="experience.html" data-i18n="home.cardExpLink">See timeline →</a>
+            </article>
+            <article class="home-card">
+              <strong data-i18n="home.cardSkills">Skills</strong>
+              <span data-i18n="home.cardSkillsBody">Django REST, React, PostgreSQL, Channels, WooCommerce, and CI/CD.</span>
+              <a href="skills.html" data-i18n="home.cardSkillsLink">Explore skills →</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured-work">
+      <div class="container">
+        <div class="featured-head reveal-blur">
+          <div>
+            <p class="eyebrow" data-i18n="home.featuredEyebrow">Selected work</p>
+            <h2 data-i18n="home.featuredTitle">Projects shipped recently</h2>
+          </div>
+          <a href="work.html" data-i18n="home.featuredAll">All projects →</a>
+        </div>
+
+        <div class="work-list">
+          <article class="work-item spotlight-card tilt-card reveal-blur">
+            <div class="spotlight" aria-hidden="true"></div>
+            <div class="tilt-glow" aria-hidden="true"></div>
+            <a class="work-main-link" href="https://valley-order.com/" target="_blank" rel="noopener" aria-label="Open Valley Order">
+              <div class="work-index">01</div>
+              <div class="work-body">
+                <div class="work-tags"><span data-i18n="tag.live">Live</span><span>Django REST</span><span>NestJS</span></div>
+                <h3 data-i18n="home.valleyTitle">Valley Order</h3>
+                <p data-i18n="home.valleyDesc">Multi-role delivery marketplace backend — JWT/OTP, dynamic pricing, FCM, and hybrid live GPS tracking.</p>
+              </div>
+              <div class="work-preview valley">
+                <div class="preview-glow"></div>
+                <span data-i18n="home.bomaPreview">Open live →</span>
+              </div>
+            </a>
+            <div class="work-actions work-actions-grid cols-1">
+              <a class="work-action live" href="https://valley-order.com/" target="_blank" rel="noopener">
+                <strong data-i18n="home.bomaAction">View live site</strong>
+                <span>valley-order.com</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="work-item spotlight-card tilt-card reveal-blur">
+            <div class="spotlight" aria-hidden="true"></div>
+            <div class="tilt-glow" aria-hidden="true"></div>
+            <a class="work-main-link" href="https://boma.sy/" target="_blank" rel="noopener" aria-label="Open Boma Platform">
+              <div class="work-index">02</div>
+              <div class="work-body">
+                <div class="work-tags"><span data-i18n="tag.live">Live</span><span>WordPress</span><span>WooCommerce</span><span>Flutter</span></div>
+                <h3>Boma Platform</h3>
+                <p data-i18n="home.bomaDesc">Syrian e-commerce store for BOMA electrical appliances — kitchen, home, and personal-care devices — on WordPress/WooCommerce, integrated with a Flutter mobile app.</p>
+              </div>
+              <div class="work-preview">
+                <div class="preview-glow"></div>
+                <span data-i18n="home.bomaPreview">Open live →</span>
+              </div>
+            </a>
+            <div class="work-actions work-actions-grid cols-1">
+              <a class="work-action live" href="https://boma.sy/" target="_blank" rel="noopener">
+                <strong data-i18n="home.bomaAction">View live site</strong>
+                <span>boma.sy</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="work-item spotlight-card tilt-card reveal-blur">
+            <div class="spotlight" aria-hidden="true"></div>
+            <div class="tilt-glow" aria-hidden="true"></div>
+            <a class="work-main-link" href="https://www.giamaharanigroup.com/" target="_blank" rel="noopener" aria-label="Open Gia">
+              <div class="work-index">03</div>
+              <div class="work-body">
+                <div class="work-tags"><span data-i18n="tag.live">Live</span><span>React</span><span>Frontend</span></div>
+                <h3 data-i18n="home.giaTitle">Gia Restaurant</h3>
+                <p data-i18n="home.giaDesc">React restaurant site — digital menu, promos, bilingual UI, and WhatsApp ordering in Bogor.</p>
+              </div>
+              <div class="work-preview gia">
+                <div class="preview-glow"></div>
+                <span data-i18n="home.bomaPreview">Open live →</span>
+              </div>
+            </a>
+            <div class="work-actions work-actions-grid cols-1">
+              <a class="work-action live" href="https://www.giamaharanigroup.com/" target="_blank" rel="noopener">
+                <strong data-i18n="home.bomaAction">View live site</strong>
+                <span>giamaharanigroup.com</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Hatim</span>
+      <a href="resume.html" data-i18n="footer.resume">Resume (PDF)</a>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

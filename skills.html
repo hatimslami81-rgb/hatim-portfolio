@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Skills of Hatim — Django, WordPress, WooCommerce, databases, and developer tooling.">
+  <title>Skills | Hatim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Sora:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="skills">
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="header">
+    <a class="logo" href="index.html"><span>Hatim</span></a>
+    <nav class="nav" id="nav">
+      <a href="index.html" data-nav="home" data-i18n="nav.home">Home</a>
+      <a href="work.html" data-nav="work" data-i18n="nav.work">Work</a>
+      <a href="experience.html" data-nav="experience" data-i18n="nav.experience">Experience</a>
+      <a href="skills.html" data-nav="skills" data-i18n="nav.skills">Skills</a>
+      <a href="contact.html" data-nav="contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-toggle" type="button" data-i18n-aria="nav.langAria">عربي</button>
+      <a class="header-cta" href="resume.html" data-i18n="nav.cv">CV</a>
+      <button class="nav-toggle" id="navToggle" data-i18n-aria="nav.menu" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="container">
+      <header class="page-hero">
+        <p class="eyebrow reveal-blur" data-i18n="skills.eyebrow">Skills</p>
+        <h1 class="split-text" data-split="section" data-i18n="skills.title">Engineering stack across backend, CMS, and delivery.</h1>
+        <p class="reveal-blur" data-i18n="skills.lead">A practical toolkit for shipping APIs, e-commerce platforms, and maintainable web systems.</p>
+      </header>
+
+      <div class="skills-matrix">
+        <section class="skill-group reveal-blur">
+          <h3 data-i18n="skills.backend">Backend &amp; Engineering</h3>
+          <ul class="skill-cloud">
+            <li>Python</li>
+            <li>Django</li>
+            <li>Django REST Framework</li>
+            <li>Django Channels</li>
+            <li>NestJS</li>
+            <li>Node.js</li>
+            <li>REST APIs</li>
+            <li>PostgreSQL</li>
+            <li>Redis</li>
+            <li>MySQL</li>
+            <li>SQLite</li>
+            <li data-i18n="skills.dbArch">Database Architecture</li>
+          </ul>
+        </section>
+
+        <section class="skill-group reveal-blur">
+          <h3 data-i18n="skills.frontend">Frontend, React &amp; CMS</h3>
+          <ul class="skill-cloud">
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li data-i18n="skills.responsive">Responsive Web Design</li>
+            <li>WordPress</li>
+            <li data-i18n="skills.themes">Custom Themes &amp; Plugins</li>
+            <li>Elementor Pro</li>
+            <li>WooCommerce</li>
+            <li>Flutter</li>
+          </ul>
+        </section>
+
+        <section class="skill-group reveal-blur">
+          <h3 data-i18n="skills.tools">Tools &amp; Workflows</h3>
+          <ul class="skill-cloud">
+            <li>Git / GitHub</li>
+            <li data-i18n="skills.migration">Site Migration</li>
+            <li data-i18n="skills.static">Static Deployment</li>
+            <li>Postman</li>
+            <li data-i18n="skills.maintenance">Web Maintenance</li>
+            <li data-i18n="skills.security">Security Auditing</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="ai-block reveal-blur">
+        <h3 data-i18n="skills.deliveryTitle">Delivery mindset</h3>
+        <p data-i18n="skills.deliveryBody">
+          I ship with a backend-first mindset — clear APIs, durable data models, and production WordPress platforms
+          that stay fast, secure, and easy to maintain after launch.
+        </p>
+          <ul class="ai-tools">
+          <li>Django REST</li>
+          <li>React</li>
+          <li>WooCommerce</li>
+          <li data-i18n="skills.perf">Performance</li>
+          <li data-i18n="skills.migrations">Migrations</li>
+        </ul>
+      </div>
+
+      <div class="edu-certs reveal-blur">
+        <div>
+          <h3 data-i18n="skills.edu">Education</h3>
+          <p data-i18n="skills.eduBody"><strong>Bachelor’s — Information Engineering</strong><br>Al-Ittihad Private University</p>
+        </div>
+        <div>
+          <h3 data-i18n="skills.highlights">Highlights</h3>
+          <ul class="cert-list">
+            <li><a href="work.html" data-i18n-after="skills.hl1"><span data-i18n-label>Live</span> Production e-commerce platforms</a></li>
+            <li><a href="https://valley-order.com/" target="_blank" rel="noopener" data-i18n-after="skills.hl2"><span data-i18n-label>API</span> Valley Order marketplace backend</a></li>
+            <li><a href="https://www.giamaharanigroup.com/" target="_blank" rel="noopener" data-i18n-after="skills.hl3"><span data-i18n-label>React</span> React restaurant &amp; product UIs</a></li>
+            <li><a href="resume.html" data-i18n-after="skills.hl4"><span data-i18n-label>CV</span> Full resume (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Hatim</span>
+      <a href="resume.html" data-i18n="footer.resume">Resume (PDF)</a>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
