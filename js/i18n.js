@@ -527,9 +527,9 @@ function applyLanguage(lang) {
   const titleKey = `meta.${page}.title`;
   if (dict[titleKey]) document.title = dict[titleKey];
 
-  // Lang toggle label
+  // Lang toggle: always show target language code (AR / EN)
   document.querySelectorAll('.lang-toggle').forEach((btn) => {
-    btn.textContent = dict['nav.lang'];
+    btn.textContent = lang === 'ar' ? 'EN' : 'AR';
     btn.setAttribute('aria-label', dict['nav.langAria']);
   });
 
