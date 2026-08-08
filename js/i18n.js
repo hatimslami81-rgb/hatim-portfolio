@@ -16,7 +16,7 @@ const I18N = {
     'nav.contact': 'Contact',
     'nav.cv': 'CV',
     'nav.menu': 'Menu',
-    'nav.lang': 'عربي',
+    'nav.lang': 'AR',
     'nav.langAria': 'Switch to Arabic',
 
     'footer.resume': 'Resume',
@@ -177,7 +177,6 @@ const I18N = {
 
     'resume.docTitle': 'Resume | Hatim Slami',
     'resume.eyebrow': 'Resume',
-    'resume.print': 'Print',
     'resume.downloadPdf': 'Download PDF',
     'resume.back': 'Back to site',
     'resume.title': 'Python (Django) & Full-Stack Web Developer | Information Engineer',
@@ -410,7 +409,6 @@ const I18N = {
 
     'resume.docTitle': 'السيرة الذاتية | حاتم سلامي',
     'resume.eyebrow': 'السيرة الذاتية',
-    'resume.print': 'طباعة',
     'resume.downloadPdf': 'تحميل PDF',
     'resume.back': 'العودة للموقع',
     'resume.title': 'مطوّر بايثون (Django) وويب متكامل | مهندس معلوماتية',

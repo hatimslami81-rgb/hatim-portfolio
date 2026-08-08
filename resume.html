@@ -15,8 +15,7 @@
   <div class="resume-toolbar no-print">
     <a class="resume-tool" href="index.html" data-i18n="resume.back">Back to site</a>
     <div class="resume-toolbar-actions">
-      <button class="lang-toggle" type="button" data-i18n-aria="nav.langAria">عربي</button>
-      <button class="resume-tool" type="button" id="printResume" data-i18n="resume.print">Print</button>
+      <button class="lang-toggle" type="button" data-i18n-aria="nav.langAria">AR</button>
       <a class="resume-tool primary" href="assets/Hatim_Resume.pdf" download data-i18n="resume.downloadPdf">Download PDF</a>
     </div>
   </div>
@@ -143,7 +142,6 @@
     });
     const dict0 = window.HatimI18n.I18N[window.HatimI18n.getLang()];
     if (dict0 && dict0['resume.docTitle']) document.title = dict0['resume.docTitle'];
-    document.getElementById('printResume').addEventListener('click', () => window.print());
   </script>
 </body>
 </html>
