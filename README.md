@@ -33,7 +33,6 @@ npx serve .
 1. Drop your CV at `assets/Hatim_Resume.pdf`.
 2. Optional: add GitHub profile URL on `contact.html`.
 3. Optional: add experience dates on `experience.html`.
-4. When Ademixvet / Ranim come back online, flip their cards from offline to live.
 
 ## Deploy to GitHub Pages
 

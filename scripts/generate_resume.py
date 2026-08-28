@@ -141,7 +141,7 @@ def build():
 
     pdf.job(
         "Website Developer - Digital Arabic",
-        "kochreal.com | asamena.org | ranimrealestate.website",
+        "gulf-private.com | kochreal.com | asamena.org | ademixvet.com",
         [
             "Built and maintained WordPress / WooCommerce platforms with migrations, security hardening, and speed optimization.",
         ],
@@ -166,7 +166,7 @@ def build():
     )
     pdf.project(
         "Digital Arabic sites",
-        "Koch Real, ASAMENA, Ranim Real Estate - WordPress delivery for real-estate and association platforms.",
+        "Gulf Private, Koch Real, ASAMENA, Ademixvet - WordPress delivery for real-estate, infrastructure, and association platforms.",
     )
 
     pdf.section("Skills")
