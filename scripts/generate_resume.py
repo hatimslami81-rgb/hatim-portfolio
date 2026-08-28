@@ -149,6 +149,10 @@ def build():
 
     pdf.section("Selected Projects")
     pdf.project(
+        "IndoForm - indoform.id",
+        "WhatsApp commerce SaaS for UMKM: storefront builder, store links, QRIS payments, order dashboard, and 0% platform commission.",
+    )
+    pdf.project(
         "Valley Order - valley-order.com",
         "Marketplace backend: JWT/OTP, catalog, checkout, dynamic pricing, FCM, hybrid realtime tracking (Django + NestJS).",
     )

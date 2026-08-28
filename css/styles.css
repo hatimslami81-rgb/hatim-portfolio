@@ -1759,6 +1759,10 @@ html[dir="rtl"] .marquee-track {
   background: linear-gradient(135deg, #134e4a, #1e3a3a);
 }
 
+.work-preview.indoform {
+  background: linear-gradient(135deg, #059669, #0d9488);
+}
+
 .work-preview.gulf {
   background: linear-gradient(135deg, #78350f, #92400e);
 }
