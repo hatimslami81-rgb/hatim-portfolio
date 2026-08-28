@@ -141,7 +141,7 @@ def build():
 
     pdf.job(
         "Website Developer - Digital Arabic",
-        "gulf-private.com | kochreal.com | asamena.org | ademixvet.com",
+        "gulf-private.com | kochreal.com | ademixvet.com",
         [
             "Built and maintained WordPress / WooCommerce platforms with migrations, security hardening, and speed optimization.",
         ],
@@ -165,8 +165,16 @@ def build():
         "React restaurant site (Bogor): digital menu, promos, bilingual UI, WhatsApp ordering.",
     )
     pdf.project(
-        "Digital Arabic sites",
-        "Gulf Private, Koch Real, ASAMENA, Ademixvet - WordPress delivery for real-estate, infrastructure, and association platforms.",
+        "Gulf Private - gulf-private.com",
+        "Corporate WordPress site for Saudi infrastructure and real-estate development.",
+    )
+    pdf.project(
+        "Koch Real - kochreal.com",
+        "Luxury real-estate WordPress platform with property search and bilingual Arabic UI.",
+    )
+    pdf.project(
+        "Ademixvet - ademixvet.com",
+        "Animal-health commerce WordPress site with custom infrastructure and product catalog UX.",
     )
 
     pdf.section("Skills")
