@@ -721,7 +721,11 @@ html[dir="rtl"] .marquee-track {
 }
 
 /* Work — Spotlight + Tilt cards */
-.work-list { display: grid; gap: 1.5rem; }
+.work-list {
+  display: grid;
+  gap: 1.5rem;
+  counter-reset: work-index;
+}
 
 .work-item {
   position: relative;
@@ -824,6 +828,11 @@ html[dir="rtl"] .marquee-track {
   font-weight: 800;
   color: rgba(13, 148, 136, 0.35);
   letter-spacing: -0.04em;
+}
+
+.work-index::before {
+  content: counter(work-index, decimal-leading-zero);
+  counter-increment: work-index;
 }
 
 .work-tags {
@@ -1533,7 +1542,7 @@ html[dir="rtl"] .marquee-track {
   .aurora-blob-3 { width: 50vw; height: 50vw; }
   .aurora-blob-4 { width: 40vw; height: 40vw; }
   .work-main-link { grid-template-columns: 1fr; }
-  .work-index { display: none; }
+  .work-index { font-size: 1.35rem; }
   .work-preview { height: 70px; }
   .work-actions { grid-template-columns: 1fr; }
   .timeline-item { padding-left: 1rem; }
