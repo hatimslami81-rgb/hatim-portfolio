@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Resume of Hatim Slami — Python (Django) & Full-Stack Web Developer.">
+  <meta name="description" content="Resume of Hatim Slami — Python (Django) & Full-Stack Web Developer based in Jakarta, Indonesia. Open to remote roles.">
   <title>Resume | Hatim Slami</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,13 +22,14 @@
 
   <main class="resume-sheet" id="resumeSheet">
     <header class="resume-header">
-      <p class="resume-eyebrow" data-i18n="resume.eyebrow">Resume</p>
       <h1>Hatim Slami</h1>
       <p class="resume-role" data-i18n="resume.title">Python (Django) &amp; Full-Stack Web Developer | Information Engineer</p>
       <p class="resume-contacts">
         <a href="mailto:hatimslami81@gmail.com">hatimslami81@gmail.com</a>
         <span aria-hidden="true">·</span>
-        <a href="tel:+963936317358">0936317358</a>
+        <a href="tel:+628875932828">+62 887-5932-828</a>
+        <span aria-hidden="true">·</span>
+        <span data-i18n="resume.location">Jakarta, Indonesia</span>
         <span aria-hidden="true">·</span>
         <a href="https://www.linkedin.com/in/hatim-slami" target="_blank" rel="noopener">linkedin.com/in/hatim-slami</a>
       </p>
@@ -36,11 +37,27 @@
 
     <section class="resume-section">
       <h2 data-i18n="resume.summaryTitle">Professional Summary</h2>
-      <p data-i18n="resume.summary">Information Engineer and Full-Stack Web Developer specializing in robust backends with Python &amp; Django REST Framework, React frontends, and production WordPress / WooCommerce platforms. Experience shipping multi-role marketplace APIs, realtime GPS tracking, JWT/OTP auth, and high-converting business websites.</p>
+      <p data-i18n="resume.summary">Information Engineer and Full-Stack Web Developer based in Jakarta, Indonesia, open to remote roles. Specializes in Python &amp; Django REST backends, React frontends, and production WordPress / WooCommerce platforms. Experience shipping multi-role marketplace APIs, WhatsApp commerce SaaS, realtime GPS tracking, JWT/OTP auth, and high-converting business websites.</p>
+    </section>
+
+    <section class="resume-section">
+      <h2 data-i18n="resume.skillsTitle">Technical Skills</h2>
+      <p><strong data-i18n="resume.skillsBackend">Backend:</strong> <span data-i18n="resume.skillsBackendVal">Python, Django, Django REST, Channels, NestJS, Node.js, REST APIs, PostgreSQL, Redis, MySQL, SQLite</span></p>
+      <p><strong data-i18n="resume.skillsFrontend">Frontend / CMS:</strong> <span data-i18n="resume.skillsFrontendVal">React, JavaScript, HTML5, CSS3, WordPress, Elementor Pro, WooCommerce, Flutter, Responsive Design</span></p>
+      <p><strong data-i18n="resume.skillsTools">Tools:</strong> <span data-i18n="resume.skillsToolsVal">Git/GitHub, Docker, Nginx, GitHub Actions, Postman, Site Migration, Security Auditing, Web Maintenance</span></p>
     </section>
 
     <section class="resume-section">
       <h2 data-i18n="resume.expTitle">Experience</h2>
+
+      <article class="resume-job">
+        <h3 data-i18n="resume.roleIndoform">Software Developer — IndoForm</h3>
+        <p class="resume-meta" data-i18n="resume.metaIndoform">WhatsApp commerce SaaS | indoform.id</p>
+        <ul>
+          <li data-i18n="resume.b1Indoform">Contributed to development of a WhatsApp store platform for UMKM — storefront setup, store links, and structured order flows.</li>
+          <li data-i18n="resume.b2Indoform">Supported QRIS payment flows, order status updates, and trilingual UI (Indonesian, English, Arabic).</li>
+        </ul>
+      </article>
 
       <article class="resume-job">
         <h3 data-i18n="resume.roleValley">Backend Engineer — Valley Order</h3>
@@ -132,20 +149,13 @@
     </section>
 
     <section class="resume-section">
-      <h2 data-i18n="resume.skillsTitle">Skills</h2>
-      <p><strong data-i18n="resume.skillsBackend">Backend:</strong> <span data-i18n="resume.skillsBackendVal">Python, Django, Django REST, Channels, NestJS, Node.js, REST APIs, PostgreSQL, Redis, MySQL, SQLite</span></p>
-      <p><strong data-i18n="resume.skillsFrontend">Frontend / CMS:</strong> <span data-i18n="resume.skillsFrontendVal">React, JavaScript, HTML5, CSS3, WordPress, Elementor Pro, WooCommerce, Flutter, Responsive Design</span></p>
-      <p><strong data-i18n="resume.skillsTools">Tools:</strong> <span data-i18n="resume.skillsToolsVal">Git/GitHub, Docker, Nginx, GitHub Actions, Postman, Site Migration, Security Auditing, Web Maintenance</span></p>
-    </section>
-
-    <section class="resume-section">
       <h2 data-i18n="resume.eduTitle">Education</h2>
       <p><strong data-i18n="resume.eduDegree">Bachelor's Degree — Information Engineering</strong></p>
       <p class="resume-meta" data-i18n="resume.eduSchool">Al-Ittihad Private University</p>
     </section>
   </main>
 
-  <script src="js/i18n.js?v=6"></script>
+  <script src="js/i18n.js?v=7"></script>
   <script>
     window.HatimI18n.initI18n();
     document.addEventListener('languagechange', () => {

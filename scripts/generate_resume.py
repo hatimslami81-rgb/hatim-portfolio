@@ -1,4 +1,4 @@
-"""Generate Hatim Slami resume PDF for the portfolio."""
+"""Generate Hatim Slami resume PDF - Australian ATS-friendly layout."""
 from pathlib import Path
 
 from fpdf import FPDF
@@ -15,14 +15,14 @@ class Resume(FPDF):
     def section(self, title: str):
         self.ln(2.5)
         self.set_x(self.l_margin)
-        self.set_font("Helvetica", "B", 11)
-        self.set_text_color(13, 148, 136)
+        self.set_font("Helvetica", "B", 10.5)
+        self.set_text_color(17, 24, 39)
         self.cell(0, 6, title.upper(), new_x="LMARGIN", new_y="NEXT")
-        self.set_draw_color(13, 148, 136)
-        self.set_line_width(0.4)
+        self.set_draw_color(17, 24, 39)
+        self.set_line_width(0.35)
         y = self.get_y()
         self.line(self.l_margin, y, self.w - self.r_margin, y)
-        self.ln(2.5)
+        self.ln(2.2)
         self.set_text_color(17, 24, 39)
         self.set_x(self.l_margin)
 
@@ -55,12 +55,12 @@ def build():
     pdf = Resume()
     pdf.add_page()
 
-    pdf.set_font("Helvetica", "B", 22)
+    pdf.set_font("Helvetica", "B", 20)
     pdf.set_text_color(17, 24, 39)
-    pdf.cell(0, 9, "Hatim Slami", new_x="LMARGIN", new_y="NEXT")
+    pdf.cell(0, 8, "Hatim Slami", new_x="LMARGIN", new_y="NEXT")
 
     pdf.set_font("Helvetica", "", 10)
-    pdf.set_text_color(13, 148, 136)
+    pdf.set_text_color(17, 24, 39)
     pdf.multi_cell(
         0,
         5,
@@ -74,7 +74,7 @@ def build():
     pdf.multi_cell(
         0,
         4.2,
-        "hatimslami81@gmail.com  |  0936317358  |  linkedin.com/in/hatim-slami",
+        "hatimslami81@gmail.com  |  +62 887-5932-828  |  Jakarta, Indonesia  |  linkedin.com/in/hatim-slami",
         new_x="LMARGIN",
         new_y="NEXT",
     )
@@ -85,15 +85,51 @@ def build():
     pdf.multi_cell(
         0,
         4.5,
-        "Information Engineer and Full-Stack Web Developer specializing in robust backend systems "
-        "with Python & Django REST Framework, React frontends, and production WordPress / WooCommerce "
-        "platforms. Experience shipping multi-role marketplace APIs, realtime GPS tracking, JWT/OTP auth, "
+        "Information Engineer and Full-Stack Web Developer based in Jakarta, Indonesia, "
+        "open to remote roles. Specializes in Python & Django REST backends, React frontends, "
+        "and production WordPress / WooCommerce platforms. Experience shipping multi-role "
+        "marketplace APIs, WhatsApp commerce SaaS, realtime GPS tracking, JWT/OTP auth, "
         "and high-converting business websites.",
         new_x="LMARGIN",
         new_y="NEXT",
     )
 
+    pdf.section("Technical Skills")
+    pdf.set_text_color(31, 41, 55)
+    skills = [
+        (
+            "Backend: ",
+            "Python, Django, Django REST, Channels, NestJS, Node.js, REST APIs, PostgreSQL, Redis, MySQL, SQLite",
+        ),
+        (
+            "Frontend / CMS: ",
+            "React, JavaScript, HTML5, CSS3, WordPress, Elementor Pro, WooCommerce, Flutter, Responsive Design",
+        ),
+        (
+            "Tools: ",
+            "Git/GitHub, Docker, Nginx, GitHub Actions, Postman, Site Migration, Security Auditing, Web Maintenance",
+        ),
+    ]
+    for label, value in skills:
+        pdf.set_x(pdf.l_margin)
+        pdf.set_font("Helvetica", "B", 9)
+        pdf.set_text_color(17, 24, 39)
+        pdf.write(4.5, label)
+        pdf.set_font("Helvetica", "", 9)
+        pdf.set_text_color(31, 41, 55)
+        pdf.write(4.5, value)
+        pdf.ln(5.2)
+
     pdf.section("Experience")
+
+    pdf.job(
+        "Software Developer - IndoForm",
+        "WhatsApp commerce SaaS | indoform.id",
+        [
+            "Contributed to development of a WhatsApp store platform for UMKM - storefront setup, store links, and structured order flows.",
+            "Supported QRIS payment flows, order status updates, and trilingual UI (Indonesian, English, Arabic).",
+        ],
+    )
 
     pdf.job(
         "Backend Engineer - Valley Order",
@@ -125,7 +161,7 @@ def build():
 
     pdf.job(
         "Developer - Ademixvet",
-        "ademixvet.com",
+        "WordPress | ademixvet.com",
         [
             "Custom WordPress infrastructure, frontend adjustments, and production technical optimizations.",
         ],
@@ -141,7 +177,7 @@ def build():
 
     pdf.job(
         "Website Developer - Digital Arabic",
-        "gulf-private.com | kochreal.com | ademixvet.com",
+        "WordPress | gulf-private.com | kochreal.com",
         [
             "Built and maintained WordPress / WooCommerce platforms with migrations, security hardening, and speed optimization.",
         ],
@@ -158,7 +194,7 @@ def build():
     )
     pdf.project(
         "Boma Platform - boma.sy",
-        "Syrian e-commerce store for BOMA electrical appliances (kitchen, home, personal care) on WordPress/WooCommerce, integrated with a Flutter mobile app.",
+        "Syrian e-commerce store for BOMA electrical appliances on WordPress/WooCommerce, integrated with a Flutter mobile app.",
     )
     pdf.project(
         "Adam Events - adamevents.net",
@@ -180,32 +216,6 @@ def build():
         "Ademixvet - ademixvet.com",
         "Animal-health commerce WordPress site with custom infrastructure and product catalog UX.",
     )
-
-    pdf.section("Skills")
-    pdf.set_text_color(31, 41, 55)
-    skills = [
-        (
-            "Backend: ",
-            "Python, Django, Django REST, Channels, NestJS, Node.js, REST APIs, PostgreSQL, Redis, MySQL, SQLite",
-        ),
-        (
-            "Frontend / CMS: ",
-            "React, JavaScript, HTML5, CSS3, WordPress, Elementor Pro, WooCommerce, Flutter, Responsive Design",
-        ),
-        (
-            "Tools: ",
-            "Git/GitHub, Docker, Nginx, GitHub Actions, Postman, Site Migration, Security Auditing, Web Maintenance",
-        ),
-    ]
-    for label, value in skills:
-        pdf.set_x(pdf.l_margin)
-        pdf.set_font("Helvetica", "B", 9)
-        pdf.set_text_color(17, 24, 39)
-        pdf.write(4.5, label)
-        pdf.set_font("Helvetica", "", 9)
-        pdf.set_text_color(31, 41, 55)
-        pdf.write(4.5, value)
-        pdf.ln(5.2)
 
     pdf.section("Education")
     pdf.set_font("Helvetica", "B", 10)
